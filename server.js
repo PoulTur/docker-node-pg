@@ -1,5 +1,5 @@
 'use strict';
-
+d
 const express = require('express');
 const dbAccess = require('./dbAccess');
 
@@ -10,11 +10,8 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello world\n');
-});
 
-app.get('/testdb', (req, res) => {
+app.get('/', (req, res) => {
     dbAccess.readFromDb().then(function(result){
         res.json(result);
     });  
