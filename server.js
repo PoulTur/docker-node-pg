@@ -1,5 +1,5 @@
 'use strict';
-d
+
 const express = require('express');
 const dbAccess = require('./dbAccess');
 
